@@ -1,7 +1,7 @@
 # unige-I-info
 Repository for storing the exercises of "Fondamenti di informatica" of the first year @unige
 
-Exercise LIST:
+LIST of exercises:
 <ol>
     <li>[V] - Hello world</li>
     <li>[V] - Sum</li>
