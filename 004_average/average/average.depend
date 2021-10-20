@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1634728989 source:d:\matteo\learning\uni\unige\i anno\fondamenti di informatica\esercizi\programmazione\unige-i-info\004_average\average\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
