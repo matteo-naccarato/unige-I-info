@@ -1,3 +1,7 @@
+// Obiettivo:
+//  Creare un programma in c++ che chieda all’utente di inserire cinque interi e ne stampi a terminale la
+//  media (approssimandola ad intero).
+
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
