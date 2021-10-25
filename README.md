@@ -10,4 +10,5 @@ LIST of exercises:
     <li>[V] - Triangle</li>
     <li>[V] - Division</li>
     <li>[V] - Currency conversion</li>
+    <li>[V] - Sample operators</li>
 </ol>
