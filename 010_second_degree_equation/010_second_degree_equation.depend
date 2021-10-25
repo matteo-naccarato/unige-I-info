@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1635195972 source:d:\matteo\learning\uni\unige\i anno\fondamenti di informatica\esercizi\programmazione\unige-i-info\010_second_degree_equation\main.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+

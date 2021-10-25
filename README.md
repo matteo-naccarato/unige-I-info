@@ -11,4 +11,7 @@ LIST of exercises:
     <li>[V] - Division</li>
     <li>[V] - Currency conversion</li>
     <li>[V] - Sample operators</li>
+    <li>[V] - Sample conversions</li>
+    <li>[V] - Second-degree equation</li>
+    <li>[V] - Calculator</li>
 </ol>
