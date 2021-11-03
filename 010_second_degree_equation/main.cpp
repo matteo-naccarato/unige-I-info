@@ -71,7 +71,7 @@ int main() {
             if (infValues) {
                 cout << "There are infinite solutions in R." << endl;
             } else {
-                if (singleValue || x1 == x2) {
+                if (singleValue) {
                     cout << "The result is:\n\tx = " << x1 << endl;
                 } else {
                     cout << "The results are:\n\tx1 = " << x1 << ",\tx2 = " << x2 << endl;
