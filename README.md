@@ -14,4 +14,7 @@ LIST of exercises:
     <li>[V] - Sample conversions</li>
     <li>[V] - Second-degree equation</li>
     <li>[V] - Calculator</li>
+    <li>[ ] - Check password</li>
+    <li>[ ] - Check vocale</li>
+    <li>[ ] - Currency conversion (ILT <-> EUR)</li>
 </ol>
