@@ -48,17 +48,21 @@ int main() {
             } else {
                 singleValue = true;
                 x1 = -c/b;
-
             }
 
         } else {
             delta = pow(b, 2) - (4 * a * c);
-            if (delta >= 0) {
+            if (delta > 0) {
                 x1 = (-b -sqrt(delta)) / (2 * a);
                 x2 = (-b +sqrt(delta)) / (2 * a);
             } else {
-                err = true;
-                cout << "ERR | There are no solutions in the set of reals (R): negative delta." << endl;
+                if (delta == 0) {
+                    singleValue = true;
+                    x1 = (-b -sqrt(delta)) / (2 * a);
+                } else {
+                    err = true;
+                    cout << "ERR | There are no solutions in the set of reals (R): negative delta." << endl;
+                }
             }
         }
 
