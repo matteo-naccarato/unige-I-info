@@ -1,7 +1,6 @@
-/*
-Obiettivo:
-
-
+/* Obiettivo:
+    Creare un programma che fa inserire all'utente un carattere, e verifica che il carattere immesso sia una vocale o
+    meno, utilizzando lo statement "switch".
 */
 
 #include <iostream>
@@ -10,27 +9,30 @@ using namespace std;
 
 int main() {
 
-   cout << "Controllo vocale" << endl;
-   char chal;
-   cout << "Inserire un carattere: ";
-   cin >> chal;
+   cout << "This program checks if a character given as input is a vowel." << endl;
+   cout << "=====================================" << endl;
 
-   bool voc = false;
+   char cha;
+   cout << "Enter the character: ";
+   cin >> cha;
 
-   switch (chal) {
-       case 'a': voc = true; break;
-       case 'e': voc = true; break;
-       case 'i': voc = true; break;
-       case 'o': voc = true; break;
-       case 'u': voc = true; break;
-       case 'A': voc = true; break;
-       case 'E': voc = true; break;
-       case 'I': voc = true; break;
-       case 'O': voc = true; break;
-       case 'U': voc = true; break;
+   bool vow = false;
+
+   switch (cha) {
+       case 'a': vow = true; break;
+       case 'e': vow = true; break;
+       case 'i': vow = true; break;
+       case 'o': vow = true; break;
+       case 'u': vow = true; break;
+       case 'A': vow = true; break;
+       case 'E': vow = true; break;
+       case 'I': vow = true; break;
+       case 'O': vow = true; break;
+       case 'U': vow = true; break;
    }
 
-   cout << "Il carattere '" << chal << "' " << ((!voc)? " NON " : "") << " e' una vocale." << endl;
+   cout << "=====================================" << endl;
+   cout << "The character '" << cha << "' IS" << ((!vow)? " NOT " : " ") << "a vowel." << endl;
 
     return 0;
 }
