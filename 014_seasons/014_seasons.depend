@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1636043478 source:c:\users\matte\onedrive\desktop\unige-i-info\014_seasons\main.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+

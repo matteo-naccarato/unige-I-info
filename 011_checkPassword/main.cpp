@@ -26,12 +26,10 @@ int main() {
         cin >> chars[i];
     }
 
-    // int daVerificare = (a>=K && a<=T) || (b>=K2 && b<=T2) || (c>=K3 && c<=T3)
-
     for (int i=0; i<N_CHARS && !(lowercase && uppercase && digit); i++) {
-        if (chars[i] >= 97 && chars[i] <= 122) lowercase = true;
-        else if (chars[i] >= 65 && chars[i] <= 90) uppercase = true;
-        else if (chars[i] >= 48 && chars[i] <= 57) digit = true;
+        lowercase = !lowercase? (chars[i] >= 97 && chars[i] <= 122) : lowercase;
+        uppercase = !uppercase? (chars[i] >= 65 && chars[i] <= 90) : uppercase;
+        digit = !digit? (chars[i] >= 48 && chars[i] <= 57) : digit;
     }
 
     cout << "========================" << endl;
