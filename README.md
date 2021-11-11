@@ -18,7 +18,7 @@ LIST of exercises:
     <li>[V] - Check if vowel</li>
     <li>[V] - Currency conversion (ILT <-> EUR)</li>
     <li>[V] - Calculator</li>
-    <li>[ ] - Seasons</li>
+    <li>[V] - Prime numbers</li>
     <li>[ ] - Seasons</li>
     <li>[ ] - Seasons</li>
     <li>[ ] - Seasons</li>
