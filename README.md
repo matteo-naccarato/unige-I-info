@@ -17,5 +17,10 @@ LIST of exercises:
     <li>[V] - Check password</li>
     <li>[V] - Check if vowel</li>
     <li>[V] - Currency conversion (ILT <-> EUR)</li>
-    <li>[V] - Seasons</li>
+    <li>[V] - Calculator</li>
+    <li>[ ] - Seasons</li>
+    <li>[ ] - Seasons</li>
+    <li>[ ] - Seasons</li>
+    <li>[ ] - Seasons</li>
+    <li>[ ] - Seasons</li>
 </ol>
