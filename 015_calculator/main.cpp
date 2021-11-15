@@ -1,5 +1,8 @@
 /*  Obiettivo:
-    Il programma ...
+    Il programma consente all'utente di inserire due numeri e un'operazione, e stampa a terminale il risultato
+    dell'operazione. Una volta eseguita l'operazione, il programma chiede all'utente se continuare o interrompere. Nel
+    primo caso, chiede nuovamente di inserire numeri e operazione.
+    Per quanto riguarda la gestione della calcolatrice, possiamo utilizzare un’operatore switch.
 */
 
 #include <iostream>

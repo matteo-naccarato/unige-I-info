@@ -19,8 +19,7 @@ LIST of exercises:
     <li>[V] - Currency conversion (ILT <-> EUR)</li>
     <li>[V] - Calculator</li>
     <li>[V] - Prime numbers</li>
-    <li>[ ] - Seasons</li>
-    <li>[ ] - Seasons</li>
-    <li>[ ] - Seasons</li>
-    <li>[ ] - Seasons</li>
+    <li>[V] - Cout patterns</li>
+    <li>[ ] - Even and odd numbers</li>
+    <li>[ ] - Digits of a number</li>
 </ol>

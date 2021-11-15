@@ -1,5 +1,13 @@
 /* Obiettivo:
-    Il programma chiede ...
+    Il programma chiede all’utente di inserire un numero, e calcola tutti I numeri primi compresi tra zero e il numero
+    immesso.
+    Intanto, possiamo utilizzare un ciclo do-while per far immettere un numero maggiore di 1 all’utente.
+    A quel punto, abbiamo bisogno di:
+        - un ciclo for che consideri tutti i numeri da 2 fino al numero immesso dall’utente
+        - un ulteriore ciclo for che controlli tutti i numeri tra 2 e il numero considerato -1, e veda se uno
+        di questi numeri è un divisore.
+    I cicli possono essere anche annidati, ossia possiamo avere un ciclo for (o while) all'interno di un altro ciclo for (o
+    while)
 */
 
 #include <iostream>
