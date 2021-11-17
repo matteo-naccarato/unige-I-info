@@ -20,6 +20,6 @@ LIST of exercises:
     <li>[V] - Calculator</li>
     <li>[V] - Prime numbers</li>
     <li>[V] - Cout patterns</li>
-    <li>[ ] - Even and odd numbers</li>
-    <li>[ ] - Digits of a number</li>
+    <li>[V] - Even and odd numbers</li>
+    <li>[V] - Digits of a number</li>
 </ol>
