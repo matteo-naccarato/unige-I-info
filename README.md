@@ -22,4 +22,10 @@ LIST of exercises:
     <li>[V] - Cout patterns</li>
     <li>[V] - Even and odd numbers</li>
     <li>[V] - Digits of a number</li>
+    <li>[V] - Input of a phrase</li>
+    <li>[V] - Fraction reduction</li>
+    <li>[V] - Digits of numbers</li>
+    <li>[V] - Calc time</li>
+    <li>[ ] - </li>
+    <li>[V] - Number of vowels in a string</li>
 </ol>
