@@ -9,14 +9,14 @@
 using namespace std;
 
 float convert_time_ms2sec(int ms);
-int convert_time_ms2min(int ms, int& sec_rest);
+int convert_time_ms2min(int ms_input, float& sec_calc, int& ms_calc);
 
 int main() {
     cout << "??????????????????????" << endl;
     cout << "==============================" << endl;
 
-    int time_ms = -1, time_min = -1, time_rest_seconds = 0;
-    float time_sec = -1;
+    int time_ms = -1, time_min_calc = -1, time_ms_calc = -1;
+    float time_sec_calc = -1;
     for (int i=0; i<N_TIMES; i++) {
         do {
             cout << "Enter a time in milliseconds (ms): ";
@@ -24,10 +24,10 @@ int main() {
             if (time_ms < 0)
                 cout << "ERR | You entered a wrong time. It must be positive, try again." << endl;
         } while(time_ms < 0);
-        time_sec = convert_time_ms2sec(time_ms);
-        time_min = convert_time_ms2min(time_ms, time_rest_seconds);
+        time_sec_calc = convert_time_ms2sec(time_ms);
+        time_min_calc = convert_time_ms2min(time_ms, time_sec_calc, time_ms_calc);
 
-        cout << "(" << time_ms << " ms) = (" << time_sec << " s) = (" << time_min << " minutes " << time_rest_seconds << " seconds and " << (time_ms%1000) << " milliseconds).\n" << endl;
+        cout << "(" << time_ms << " ms) = (" << time_sec_calc << " s) = (" << time_min_calc << " minutes " << (((int) time_sec_calc)%60) << " seconds and " << time_ms_calc << " milliseconds).\n" << endl;
     }
 
     return 0;
@@ -37,11 +37,9 @@ float convert_time_ms2sec(int ms) {
     return (float) ms/1000;
 }
 
-int convert_time_ms2min(int ms, int& sec_rest) {
-    float sec = convert_time_ms2sec(ms);
-    int minutes = sec/60;
-    if (minutes==0 || minutes%60 != 0) {
-        sec_rest = sec - minutes*60;
-    }
-    return minutes;
+int convert_time_ms2min(int ms_input, float& sec_calc, int& ms_calc) {
+    sec_calc = convert_time_ms2sec(ms_input);
+    int minutes_calc = sec_calc/60;
+    ms_calc = ms_input%1000;
+    return minutes_calc;
 }

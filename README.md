@@ -28,4 +28,9 @@ LIST of exercises:
     <li>[V] - Calc time</li>
     <li>[ ] - </li>
     <li>[V] - Number of vowels in a string</li>
+    <li>[ ] - </li>
+    <li>[ ] - </li>
+    <li>[ ] - </li>
+    <li>[ ] - </li>
+    <li>[ ] - </li>
 </ol>

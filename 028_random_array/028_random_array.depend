@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637753456 source:c:\users\matte\onedrive\desktop\unige-i-info\028_random_array\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
