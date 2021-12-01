@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638359162 source:c:\users\matte\onedrive\desktop\unige-i-info\033_selection_sort\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

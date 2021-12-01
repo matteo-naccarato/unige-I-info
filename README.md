@@ -34,7 +34,7 @@ LIST of exercises:
     <li>[V] - MUL arrays</li>
     <li>[V] - Reverse array</li>
     <li>[V] - Double letters</li>
-    <li>[ ] - MUL matrices</li>
+    <li>[ ] - MUL matrices (to upgrade => vedi testa es.</li>
     <li>[ ] - SORT | selection sort</li>
     <li>[ ] - Multiplication table</li>
     <li>[ ] - Sum rows and cols</li>
