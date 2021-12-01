@@ -38,14 +38,16 @@ int main() {
     cout << "Concatenated string (with only alphabet letters): " << str_cat << endl;
 
 
-
-    // PROBLEM with: ppppp => doubles = 1 !!!!
-
     int cnt_doubles = 0;
+    int cont_lett = 0;
     for (int i=0; i<len_strcat-1; i++) {
-        if (str_cat[i] == str_cat[i+1] && ((i!=0)?(str_cat[i] != str_cat[i-1]):1)) {
-            cnt_doubles++;
+
+        cont_lett = 1;
+        while (i<len_strcat-1 && str_cat[i] == str_cat[i+1]) {
+            cont_lett++;
+            i++;
         }
+        cnt_doubles += cont_lett/2;
     }
     cout << "The number of double letters is: " << cnt_doubles << endl;
 
