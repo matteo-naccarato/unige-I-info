@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638802483 source:c:\users\matte\onedrive\desktop\unige-i-info\036_triangular_sup_and_inf\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+

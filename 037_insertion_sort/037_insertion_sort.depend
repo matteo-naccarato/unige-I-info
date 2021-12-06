@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638804200 source:c:\users\matte\onedrive\desktop\unige-i-info\037_insertion_sort\main.cpp
+	<iostream>
+	<ctime>
+	<cstdlib>
+

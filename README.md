@@ -35,8 +35,13 @@ LIST of exercises:
     <li>[V] - Reverse array</li>
     <li>[V] - Double letters</li>
     <li>[ ] - MUL matrices (to upgrade => vedi testa es.</li>
-    <li>[ ] - SORT | selection sort</li>
-    <li>[ ] - Multiplication table</li>
-    <li>[ ] - Sum rows and cols</li>
-    <li>[ ] - Triangular sup and inf</li>
+    <li>[V] - SORT | selection sort</li>
+    <li>[V] - Multiplication table</li>
+    <li>[V] - Sum rows and cols</li>
+    <li>[V] - Triangular sup and inf</li>
+    <li>[V] - Insertion sort</li>
+    <li>[V] - Read and write file</li>
+    <li>[V] - Char in file</li>
+    <li>[V] - Keyboard to file</li>
+    <li>[ ] - File to array</li>
 </ol>
