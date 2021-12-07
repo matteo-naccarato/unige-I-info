@@ -43,5 +43,5 @@ LIST of exercises:
     <li>[V] - Read and write file</li>
     <li>[V] - Char in file</li>
     <li>[V] - Keyboard to file</li>
-    <li>[ ] - File to array</li>
+    <li>[V] - File to array</li>
 </ol>

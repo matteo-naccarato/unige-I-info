@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1638899344 source:c:\users\matte\onedrive\desktop\unige-i-info\041_file_array\main.cpp
+	<iostream>
+	<fstream>
+
