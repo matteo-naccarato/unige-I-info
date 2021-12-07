@@ -13,7 +13,7 @@ using namespace std;
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program shows how many times a character, given as input, appears in a specific file." << endl;
     cout << "============================" << endl;
 
     fstream fin;

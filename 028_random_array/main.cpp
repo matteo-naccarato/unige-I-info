@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+    Creare un programma che, dopo aver chiesto all’utente di inserire la dimensione di un array, li riempia con interi
+    random compresi tra 0 e 99
 */
 
 #include <iostream>
@@ -12,7 +13,7 @@
 using namespace std;
 
 int main() {
-    cout << "This program ..." << endl;
+    cout << "This program fills an array with random numbers." << endl;
     cout << "==========================" << endl;
 
     int n;

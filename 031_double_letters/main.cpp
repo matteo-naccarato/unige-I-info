@@ -12,7 +12,7 @@ using namespace std;
 void remove_and_transpose(char str[], int len, int indexToRemove);
 
 int main() {
-    cout << "This program ..." << endl;
+    cout << "This program countes the number of double letters in a string." << endl;
     cout << "=================================" << endl;
 
     char str1[MAX_STR/2];

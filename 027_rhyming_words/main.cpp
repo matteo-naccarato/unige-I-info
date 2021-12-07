@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+    Creare un programma che chieda all’utente di inserire due stringhe, e conti il numero di lettere che «fanno rima»,
+    ovvero il numero di lettere uguali in fondo alle due stringhe
 */
 
 #include <iostream>
@@ -11,7 +12,7 @@ using namespace std;
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "Entered two strings as input, this program countes the number of rhyming letters." << endl;
     cout << "=====================" << endl;
 
     char str1[MAX_STR], str2[MAX_STR];

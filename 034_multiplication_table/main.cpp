@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+    Memorizzare in un array bidimensionale 10 x 10 la tavola pitagorica, (quella delle tabelline!), e stampare il
+    contenuto della matrice (nella prima riga si dovrà trovare la tabellina del 1: 1 2 3 4 5 6 7 8 9 10).
 */
 
 #include <iostream>
@@ -12,7 +13,7 @@ void print_mat(int mat[DIM][DIM]);
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program prints the multiplication (from 1 to 10)." << endl;
     cout << "=======================" << endl;
 
     int mul_table[DIM][DIM];

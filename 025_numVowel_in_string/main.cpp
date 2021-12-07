@@ -16,7 +16,7 @@ int isVowel(char ch);
 
 int main() {
 
-    cout << "This counts the number of vowels in a phrase given as input." << endl;
+    cout << "This countes the number of vowels in a phrase given as input." << endl;
     cout << "===========================================" << endl;
 
     char str[MAX_STR];

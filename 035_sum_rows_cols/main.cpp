@@ -16,7 +16,7 @@ int get_index_of_max(int arr[], int n);
 
 int main() {
 
-    cout << "This program ... " << endl;
+    cout << "Given a matrix as input, this program looks for the row and the column with the higher sum." << endl;
     cout << "=========================" << endl;
 
     int mat[DIM][DIM];

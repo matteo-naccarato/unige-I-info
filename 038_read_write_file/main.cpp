@@ -21,7 +21,7 @@ bool isVowel(char chr);
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "Given a file as input, this program divides the vowels and the consonants in two different output files." << endl;
     cout << "================================" << endl;
 
     fstream fin, fout_vowels, fout_cons;

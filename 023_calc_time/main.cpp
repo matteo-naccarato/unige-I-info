@@ -12,7 +12,7 @@ float convert_time_ms2sec(int ms);
 int convert_time_ms2min(int ms_input, float& sec_calc, int& ms_calc);
 
 int main() {
-    cout << "??????????????????????" << endl;
+    cout << "Given a time in [ms], this program converts it in minutes, seconds and milliseconds" << endl;
     cout << "==============================" << endl;
 
     int time_ms = -1, time_min_calc = -1, time_ms_calc = -1;

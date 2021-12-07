@@ -23,7 +23,7 @@ using namespace std;
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program countes how many each letter of the alphabet appears in a file given as input." << endl;
     cout << "===========================" << endl;
 
     fstream fin, fout;

@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+    Creare un programma che, dopo aver chiesto all’utente di inserire la dimensione e gli elementi di due array, li
+    moltiplichi tra di loro e stampi il risultato finale. Utilizzare una funzione per moltiplicare gli array.
 */
 
 #include <iostream>
@@ -14,7 +15,7 @@ void mulArray(int arr1[], int arr2[], int arrMul[], int nMul);
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program calculates the multiplication of two arrays." << endl;
     cout <<  "==================" << endl;
 
     int n1 = getDimArray(), n2 = getDimArray();

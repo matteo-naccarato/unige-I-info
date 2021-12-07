@@ -15,7 +15,7 @@ using namespace std;
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program works like a stream from the keyboard to a file." << endl;
     cout << "===============================" << endl;
 
     fstream fout;

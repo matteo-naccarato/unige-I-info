@@ -18,7 +18,7 @@ using namespace std;
 
 int main()
 {
-    cout << "This program ..." << endl;
+    cout << "This program compares the sum of the elements above the diagonal and those below." << endl;
     cout << "===============================" << endl;
 
     int dim;

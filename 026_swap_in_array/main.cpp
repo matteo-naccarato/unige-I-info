@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+    Creare un programma che chieda all’utente di inserire dei numeri, li inserisca in un array, e scambi il numero minore
+    con il maggiore
 */
 
 #include <iostream>
@@ -12,7 +13,7 @@ void printArray(float arr[], int n);
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program swap the max and the min num in an array." << endl;
     cout << "========================" << endl;
 
     int n;

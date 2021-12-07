@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+	Scrivere un programma che chieda all’utente di inserire tre numeri (non necessariamente interi), e restituisca la
+	differenza tra il numero più grande e il numero più piccolo immesso dall’utente. 
 */
 
 #include <iostream>
@@ -12,7 +13,7 @@ void get_min_max(float[], float& min_n, float& max_n);
 
 int main() {
 
-    cout << "This program ...." << endl;
+    cout << "This program calculates the difference between the max and the min number among three nums" << endl;
     cout << "=====================" << endl;
 
     float arr[N];

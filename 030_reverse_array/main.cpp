@@ -1,5 +1,6 @@
 /* Obiettivo:
-
+    Creare un programma che, dopo aver chiesto all’utente di inserire la dimensione e gli elementi di un array, lo
+    inverta e stampi il risultato finale. Utilizzare una funzione per l’inversione dell’array
 */
 
 #include <iostream>
@@ -13,7 +14,7 @@ void reverseArray(int arr[], int n);
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program reverses an array." << endl;
     cout << "=============================" << endl;
 
     int n = getDimArray();

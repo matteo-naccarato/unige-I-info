@@ -1,5 +1,17 @@
 /* Obiettivo:
-
+    SELECTION SORT:
+    L’ idea di base è semplice: si cercano successivamente i minimi
+    dell’array.
+    Questo algoritmo “divide” di fatto l’array in due parti, la prima
+    ordinata e le seconda non-ordinata, inizialmente la prima parte
+    non conterrà alcun elemento.
+    L’algoritmo continuerà a cercherà il minimo tra gli elementi della
+    parte non-ordinata e lo scambierà con il primo elemento della
+    parte non ordinata, andando così ad aumentare di uno la
+    dimensione della parte ordinata.
+    L’algoritmo termina quando la parte non-ordinata contiene un
+    solo elemento, che sarà il massimo dell’array, e quindi l’array sarà
+    completamente ordinato.
 */
 
 #include <iostream>
@@ -22,7 +34,7 @@ int get_index_of_min(int arr[], int start, int stop);
 
 int main() {
 
-    cout << "This program ..." << endl;
+    cout << "This program implements the selection sort." << endl;
     cout << "=============================" << endl;
 
     int n = input_dim_array();
