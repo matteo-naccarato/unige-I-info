@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1639505372 source:c:\users\matte\onedrive\desktop\unige-i-info\045_array_structs_file\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+	<cstdlib>
+

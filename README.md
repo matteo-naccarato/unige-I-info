@@ -44,4 +44,8 @@ LIST of exercises:
     <li>[V] - Char in file</li>
     <li>[V] - Keyboard to file</li>
     <li>[V] - File to array</li>
+    <li>[V] - Structs</li>
+    <li>[V] - Bookshop</li>
+    <li>[V] - Struct person (array of people)</li>
+    <li>[V] - Date of birthdays (file and array of structs)</li>
 </ol>

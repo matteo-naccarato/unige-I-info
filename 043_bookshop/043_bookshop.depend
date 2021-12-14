@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1639410328 source:c:\users\matte\onedrive\desktop\unige-i-info\043_bookshop\main.cpp
+	<iostream>
+	<fstream>
+	<cstring>
+
