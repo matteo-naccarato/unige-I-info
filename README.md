@@ -48,8 +48,8 @@ LIST of exercises:
     <li>[V] - Bookshop</li>
     <li>[V] - Struct person (array of people)</li>
     <li>[V] - Date of birthdays (file and array of structs)</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>[V] - Pointers</li>
+    <li>[V] - Pointers arithmetic</li>
+    <li>[V] - Pointers as parameters</li>
+    <li>[V] - Pointers matrices</li>
 </ol>
