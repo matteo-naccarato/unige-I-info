@@ -52,4 +52,8 @@ LIST of exercises:
     <li>[V] - Pointers arithmetic</li>
     <li>[V] - Pointers as parameters</li>
     <li>[V] - Pointers matrices</li>
+    <li>[V] - Pointers to funct (w/ bubble sort)</li>
+    <li>[V] - bubble sort 2 (w/ new_malloc)</li>
+    <li>[ ] - Pointers to structs</li>
+    <li>[ ] - ...</li>
 </ol>
