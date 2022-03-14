@@ -92,5 +92,7 @@ int main() {
         }
         cout << "\b ]" << endl;
 
+    delete[] arr;
+
     return 0;
 }
