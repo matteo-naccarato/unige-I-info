@@ -27,20 +27,54 @@ dovrebbe essere 1).
 
 using namespace std;
 
+const int NA = 5;
+const int NB = 3;
 
 
 int* append(int* pa, int* pb, int na, int nb) {
-    int* arr = new int[na+nb];
+    int* rt_arr = new int[na+nb];
+    if (rt_arr == 0) return (int*)-3;
+    int ia=0, ib=0, irt=0;
+    while (ia<na && ib<nb) {
+        if (*(pa+ia) < *(pb+ib)) {
+            *(rt_arr+irt) = *(pa+ia);
+            ia++;
+        } else {
+            *(rt_arr+irt) = *(pb+ib);
+            ib++;
+        }
+        irt++;
+    }
+    while (ia<na) {
+        *(rt_arr+irt) = *(pa+ia);
+        ia++;
+        irt++;
+    }
+    while(ib<nb) {
+        *(rt_arr+irt) = *(pb+ib);
+        ib++;
+        irt++;
+    }
+    return rt_arr;
 }
 
 
 
 int main() {
 
+    int ra[NA] = {-1, 0,3,5,7};
+    int rb[NB] = {-10,2,7};
 
+    int* rt_arr = append(ra, rb, NA, NB);
 
-
-    int* rt_arr = append();
+    cout << "RT_ARR = [ ";
+    for (int i=0; i<NA+NB; i++) {
+        cout << rt_arr[i] << ",";
+    }
+    /* for (int* pi=rt_arr; (pi-rt_arr) < NA+NB; pi++) {
+        cout << *(rt_arr+pi) << ", ";
+    } */
+    cout << "\b ]" << endl;
 
     delete[] rt_arr;
 
