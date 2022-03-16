@@ -52,8 +52,11 @@ LIST of exercises:
     <li>[V] - Pointers arithmetic</li>
     <li>[V] - Pointers as parameters</li>
     <li>[V] - Pointers matrices</li>
-    <li>[V] - Pointers to funct (w/ bubble sort)</li>
-    <li>[V] - bubble sort 2 (w/ new_malloc)</li>
-    <li>[V] - Pointers to structs</li>
-    <li>[ ] - Chaining<li>
+    <li>[V] - 10.1 Pointers to funct (w/ bubble sort)</li>
+    <li>[V] - 10.2 Bubble sort 2 (w/ new_malloc)</li>
+    <li>[V] - 10.3 Pointers to structs</li>
+    <li>[V] - 10.4 Chaining arrays (new&delete, bubblesort)</li>
+    <li>[V] - 11.1 Dynamic allocation (new&delete)<li>
+    <li>[V] - 11.2 Recursive functions<li>
+    <li>[ ] - 11.3 Functions template<li>
 </ol>
