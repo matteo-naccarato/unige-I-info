@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -60,6 +61,14 @@ void print_array(Obj* arr, int n, char* str) {
     cout << "\b\b\b\b\n ]" << endl;
 }
 
+void store_cpy(Obj* new_store, Obj* old_store, int dim) {
+    for (Obj* pi=old_store; (int)(pi-old_store) < dim; pi++) {
+        int temp_i = pi - old_store;
+        strcpy((new_store + temp_i)->name, pi->name);
+        (new_store + temp_i)->price = pi->price;
+    }
+}
+
 
 int main() {
 
@@ -76,7 +85,27 @@ int main() {
     print_array(store, n, (char*) "STORE");
 
 
-    delete[] store;
+
+    cout << "\n================================" << endl;
+    int choice = -1;
+    cout << "Do u wanna add another element in the store? if so, enter '1', otherwise any other number u like (excpet 1, pls :P): ";
+    cin >> choice;
+    if (choice == 1) {
+
+        Obj* new_store = new Obj[n+1];
+        if (new_store == 0) {
+            cout << "ERR | dynamic allocation Obj*" << endl;
+            return -1;
+        }
+        store_cpy(new_store, store, n);
+        delete[] store;
+
+        input_obj_data(new_store, n);
+        print_array(new_store, n+1, (char*) "NEW_STORE");
+
+        delete[] new_store;
+
+    } else delete[] store;
 
     return 0;
 }
