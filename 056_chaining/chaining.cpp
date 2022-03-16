@@ -27,55 +27,126 @@ dovrebbe essere 1).
 
 using namespace std;
 
-const int NA = 5;
-const int NB = 3;
-
 
 int* append(int* pa, int* pb, int na, int nb) {
     int* rt_arr = new int[na+nb];
-    if (rt_arr == 0) return (int*)-3;
-    int ia=0, ib=0, irt=0;
-    while (ia<na && ib<nb) {
-        if (*(pa+ia) < *(pb+ib)) {
+    if (rt_arr != 0) {
+
+        int ia=0, ib=0, irt=0;
+        while (ia<na && ib<nb) {
+            if (*(pa+ia) < *(pb+ib)) {
+                *(rt_arr+irt) = *(pa+ia);
+                ia++;
+            } else {
+                *(rt_arr+irt) = *(pb+ib);
+                ib++;
+            }
+            irt++;
+        }
+        while (ia<na) {
             *(rt_arr+irt) = *(pa+ia);
             ia++;
-        } else {
+            irt++;
+        }
+        while(ib<nb) {
             *(rt_arr+irt) = *(pb+ib);
             ib++;
+            irt++;
         }
-        irt++;
     }
-    while (ia<na) {
-        *(rt_arr+irt) = *(pa+ia);
-        ia++;
-        irt++;
-    }
-    while(ib<nb) {
-        *(rt_arr+irt) = *(pb+ib);
-        ib++;
-        irt++;
-    }
+
     return rt_arr;
+}
+
+int input_length(char* str) {
+    int n = -1;
+    int err = -1;
+    do {
+        err = 0;
+        cout << "Enter the length of array " << str << ": ";
+        cin >> n;
+        if (n<1) {
+            cout << "ERR | value not valid" << endl;
+            err = 1;
+        }
+
+    } while (err);
+    return n;
+}
+
+void input_array(int* arr, int n, char* str) {
+    cout << "input for array " << str << endl;
+    for (int* pi=arr; pi-arr < n; pi++) {
+        cout << "\t#" << (pi-arr) << ": ";
+        cin >> *pi;
+    }
+}
+
+void print_array(int* arr, int n, char* str) {
+    cout << str << " = [ ";
+    for (int i=0; i<n; i++) {
+        cout << arr[i] << ",";
+    }
+    cout << "\b ]" << endl;
+}
+
+void bubblesort(int* arr, int n) {
+    int temp;
+    int swapped = 1;
+    for (int i=n-1; i>0 && swapped; i--) {
+        swapped = 0;
+        for (int j=0; j<i; j++) {
+            if (arr[j] > arr[j+1]) {
+                temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+                swapped = 1;
+            }
+        }
+    }
 }
 
 
 
 int main() {
+    
+    int na=-1, nb=-1;
+    na = input_length((char*)"A");
+    nb = input_length((char*)"B");
 
-    int ra[NA] = {-1, 0,3,5,7};
-    int rb[NB] = {-10,2,7};
+    cout << endl;
 
-    int* rt_arr = append(ra, rb, NA, NB);
+    int* ra = new int[na];
+    if (ra == 0) return -2;
+    int* rb = new int[nb];
+    if (rb == 0) return -2;
+    input_array(ra, na, (char*)"A");
+    input_array(rb, nb, (char*)"B");
 
-    cout << "RT_ARR = [ ";
-    for (int i=0; i<NA+NB; i++) {
-        cout << rt_arr[i] << ",";
+    print_array(ra, na, (char*)"A");
+    print_array(rb, nb, (char*)"B");
+
+
+    bubblesort(ra, na);
+    bubblesort(rb, nb);
+
+    cout << "=============Sorted arrays=================" << endl;
+    print_array(ra, na, (char*)"A");
+    print_array(rb, nb, (char*)"B");
+    cout <<  "==========================================" << endl;
+
+    int* rt_arr = append(ra, rb, na, nb);
+    if (rt_arr == 0) {
+        cout << "ERR | malloc" << endl;
+        return -1;
     }
-    /* for (int* pi=rt_arr; (pi-rt_arr) < NA+NB; pi++) {
-        cout << *(rt_arr+pi) << ", ";
-    } */
-    cout << "\b ]" << endl;
 
+    cout <<  "==========================================" << endl;
+    print_array(rt_arr, na+nb, (char*)"RT_ARR");
+
+
+    delete[] ra;
+    delete[] rb;
     delete[] rt_arr;
 
     return 0;
