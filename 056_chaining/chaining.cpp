@@ -58,6 +58,14 @@ int* append(int* pa, int* pb, int na, int nb) {
     return rt_arr;
 }
 
+int check_sort(int* arr, int n) {
+    for (int i=0; i<n-1; i++) {
+        if (arr[i] > arr[i+1])
+            return 0;
+    }
+    return 1;
+}
+
 int input_length(char* str) {
     int n = -1;
     int err = -1;
@@ -143,6 +151,9 @@ int main() {
 
     cout <<  "==========================================" << endl;
     print_array(rt_arr, na+nb, (char*)"RT_ARR");
+
+    cout << "===========================================" << endl;
+    cout << "CHECK VALUE (0: NOT sorted, 1: sorted): " << check_sort(rt_arr, na+nb);
 
 
     delete[] ra;
