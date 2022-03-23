@@ -58,5 +58,5 @@ LIST of exercises:
     <li>[V] - 10.4 Chaining arrays (new&delete, bubblesort)</li>
     <li>[V] - 11.1 Dynamic allocation (new&delete)<li>
     <li>[V] - 11.2 Recursive functions<li>
-    <li>[ ] - 11.3 Functions template<li>
+    <li>[V] - 11.3 Functions template<li>
 </ol>
