@@ -59,4 +59,8 @@ LIST of exercises:
     <li>[V] - 11.1 Dynamic allocation (new&delete)<li>
     <li>[V] - 11.2 Recursive functions<li>
     <li>[V] - 11.3 Functions template<li>
+    <li>[V] - 12.1 Intro classes<li>
+    <li>[ ] - 12.2 Array of pointers to function<li>
+    <li>[ ] - 12.3 Pointers & matrices<li>
+    <li>[V] - 12.4 Recursive functions<li>
 </ol>
