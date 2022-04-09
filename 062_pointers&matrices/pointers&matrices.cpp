@@ -11,12 +11,6 @@ const int MAX_NUM_RAND = 3;
 // class Matrix {}
 
 
-
-// TODO: scorrimenti con aritmetica dei puntatori (I hope :))
-
-
-
-
 bool isSymmetrical(int** mat, int n, int m) {
     bool symm = true;
     for (int i=0; symm && i<n; i++) {
@@ -36,36 +30,25 @@ void genMatrix(int** mat, int n, int m) {
         }
     }
 
-
-    /* for (int** pi=0; pi-mat<n; pi++) {
-        for (int** pj=0; pj-mat<m; pj++) {
-            *(*(**mat+**pi)+(**pj)) = MIN_NUM_RAND + rand() % (MAX_NUM_RAND - MIN_NUM_RAND + 1);
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            *(*(mat+i)+j) = MIN_NUM_RAND + rand() % (MAX_NUM_RAND - MIN_NUM_RAND + 1);
         }
-    } */
+        cout << endl;
+    }
 
-
-
-
-    /* for (int* pi = *mat; (pi-(*mat)) < n; pi++) {
-        for (int* pj = *mat; (pj-(*mat)) < m; pj++) {
-            *(*(**mat + pi) + pj) = MIN_NUM_RAND + rand() % (MAX_NUM_RAND - MIN_NUM_RAND + 1); // generates [min,max+1)
-        }
-    } */
 }
 
 void printMatrix(int** mat, int n, int m) {
     cout << "\nMATRIX" << endl;
-    for (int i=0; i<n; i++) {
+    // for (int i=0; i<n; i++) 
+    for (int** i=mat; (i-mat)<n; i++) {
         for (int j=0; j<m; j++) {
-            cout << mat[i][j] << " ";
+            //cout << *( *(mat + i) + j) << " ";
+            cout << *(*(mat + (i-mat)) + j) << " ";
         }
         cout << endl;
     }
-    /* for (int* pi = *mat; (pi-(*mat)) < n; pi++) {
-        for(int* pj = *mat; (pj-(*mat)) < m; pj++) {
-            cout << *(*(**mat + pi) + pj) << " " << endl;
-        }
-    } */
 }
 
 int input_dim(char* str) {
