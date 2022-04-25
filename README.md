@@ -61,6 +61,12 @@ LIST of exercises:
     <li>[V] - 11.3 Functions template<li>
     <li>[V] - 12.1 Intro classes<li>
     <li>!!! --- IMPORTANT --- [V] - 12.2 Array of pointers to function<li>
-    <li>[ ] - 12.3 Pointers & matrices<li>
+    <li>!!! --- IMPORTANT --- [V] - 12.3 Pointers & matrices<li>
     <li>[V] - 12.4 Recursive functions<li>
+    <li>[V] - 13.1 Upgrade 12.1<li>
+    <li>[V] - 13.2 Attributes as array<li>
+    <li>[V] - 13.3 Compound class (manca l'ultimo punto)<li>
+    <li></li>
+    <li></li>
+    <li></li>
 </ol>
